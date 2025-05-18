@@ -8,46 +8,50 @@
 
   outputs =
     {
-      self,
       dream2nix,
       nixpkgs,
+      ...
     }:
     let
+      makeDream2nixPkg =
+        pkgPath: pkgs:
+        dream2nix.lib.evalModules {
+          packageSets.nixpkgs = pkgs;
+          modules = [
+            pkgPath
+            {
+              paths = {
+                projectRoot = ./.;
+                projectRootFile = "flake.nix";
+                package = pkgPath;
+              };
+            }
+          ];
+        };
+
       eachSystem = nixpkgs.lib.genAttrs [
+        "x86_64-linux"
         "aarch64-darwin"
         "aarch64-linux"
         "x86_64-darwin"
-        "x86_64-linux"
       ];
     in
     {
+      overlays = [
+        (final: prev: {
+          prisma-language-server = makeDream2nixPkg ./servers/prisma-language-server prev;
+          gh-actions-language-server = makeDream2nixPkg ./servers/gh-actions-language-server prev;
+        })
+      ];
+
       packages = eachSystem (
         system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
-          mkPackage =
-            { pkgPath }:
-            dream2nix.lib.evalModules {
-              packageSets.nixpkgs = pkgs;
-              modules = [
-                (import pkgPath)
-                {
-                  paths = {
-                    projectRoot = ./.;
-                    projectRootFile = "flake.nix";
-                    package = pkgPath;
-                  };
-                }
-              ];
-            };
         in
         {
-          prisma-language-server = mkPackage {
-            pkgPath = ./servers/prisma-language-server;
-          };
-          gh-actions-language-server = mkPackage {
-            pkgPath = ./servers/gh-actions-language-server;
-          };
+          prisma-language-server = makeDream2nixPkg ./servers/prisma-language-server pkgs;
+          gh-actions-language-server = makeDream2nixPkg ./servers/gh-actions-language-server pkgs;
         }
       );
     };

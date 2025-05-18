@@ -19,6 +19,23 @@ Useful for Neovim, editors, or developer tools that rely on Prisma language inte
 > [!note]
 > This is just an example, you can use this flake however it suits your configuration style.
 
+First create or update your overlays setup. Your setup might be different than mine, but the concept should be the same.
+
+```nix
+# overlays.nix
+{
+  nixos-npm-ls,
+  ...
+}:
+{
+  nixpkgs.overlays = [
+  ... # your existing overlays
+ ] ++ nixos-npm-ls.overlays;
+}
+```
+
+Then add the flake to your inputs, don't forget the overlays (again your setup might be different, do it your way).
+
 ```nix
 # flake.nix
 {
@@ -27,8 +44,8 @@ Useful for Neovim, editors, or developer tools that rely on Prisma language inte
  outputs = { nixos-npm-ls, ... }: {
   nixosConfigurations.myComputer = pkgs.lib.nixosSystem {
    system = "x86_64-linux";
-   specialArgs = { inherit nixos-npm-ls; };
    modules = [
+    ./overlays.nix
     ...
    ];
   };
@@ -42,16 +59,16 @@ Then you can use it in your nixos or home manager configuration:
 # configuration.nix
 {
  environment.systemPackages = with pkgs; [
-  nixos-npm-ls.packages.${pkgs.system}.prisma-language-server
-  nixos-npm-ls.packages.${pkgs.system}.gh-actions-language-server
+  prisma-language-server
+  gh-actions-language-server
  ];
 }
 
 # or home manager
 {
  home.packages = with pkgs; [
-  nixos-prismals.packages.${pkgs.system}.prisma-language-server
-  nixos-npm-ls.packages.${pkgs.system}.gh-actions-language-server
+  prisma-language-server
+  gh-actions-language-server
  ];
 }
 ```
