@@ -2,6 +2,7 @@
 
 > This flake exists because there's no easy way to install the NPM based language server (e.g. prismals) in Nixos, and we can't easily use mason.nvim in Nixos either.
 > This repo is mainly for my own usage, but feel free to use it if you want.
+> The packages will be removed once the upstream made them available and actually usable.
 
 A self-updating (every 6 hours) Nix Flake that packages using [`dream2nix`](https://github.com/nix-community/dream2nix).
 Useful for Neovim, editors, or developer tools that rely on Prisma language intelligence — all fully reproducible and Nix-native.
