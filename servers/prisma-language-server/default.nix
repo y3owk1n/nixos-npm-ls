@@ -6,8 +6,8 @@
 }:
 let
   name = "prisma-language-server";
-  version = "6.11.1";
-  sha256 = "sha256-zbII+8JMiI9wkJJ740OBha59GF3PaXIoetjDjXpJDeI=";
+  version = "6.12.0";
+  sha256 = "sha256-9ryqN4QA1NSlPaZO0pBRTth01/56SFyWjyTJ76Sy9go=";
 in
 {
   imports = [
