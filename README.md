@@ -40,7 +40,7 @@ Then add the flake to your inputs, don't forget the overlays (again your setup m
 ```nix
 # flake.nix
 {
- inputs.nixos-npm-ls.url = "github:y3owk1n/nixos-npm-ls";
+ inputs.nixos-npm-ls.url = "github:y3owk1n/nixos-npm-ls"; # or "https://flakehub.com/f/y3owk1n/nixos-npm-ls/0.1"
 
  outputs = { nixos-npm-ls, ... }: {
   nixosConfigurations.myComputer = pkgs.lib.nixosSystem {
