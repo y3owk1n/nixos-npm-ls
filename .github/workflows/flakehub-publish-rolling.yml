@@ -19,5 +19,5 @@ jobs:
           name: "y3owk1n/nixos-npm-ls"
           rolling: true
           visibility: "public"
-          include-output-paths: true
-          extra-args: --no-check-evals
+          include-output-paths: false
+          my-flake-is-too-big: true
