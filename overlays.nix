@@ -1,8 +1,7 @@
-{ inputs }:
+{ self }:
 {
   default = final: prev: {
-    npm-ls = inputs.self.packages.${prev.system}.npm-ls;
-    prisma-language-server = inputs.self.packages.${prev.system}.prisma-language-server;
-    gh-actions-language-server = inputs.self.packages.${prev.system}.gh-actions-language-server;
+    prisma-language-server = self.packages.${prev.system}.prisma-language-server;
+    gh-actions-language-server = self.packages.${prev.system}.gh-actions-language-server;
   };
 }

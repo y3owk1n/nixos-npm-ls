@@ -8,7 +8,7 @@
 
   outputs =
     {
-      inputs,
+      self,
       dream2nix,
       nixpkgs,
       ...
@@ -38,7 +38,7 @@
       ];
     in
     {
-      overlays = import ./overlays { inherit inputs; };
+      overlays = import ./overlays { inherit self; };
 
       packages = eachSystem (
         system:
