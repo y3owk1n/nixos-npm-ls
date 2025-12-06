@@ -29,8 +29,9 @@ First create or update your overlays setup. Your setup might be different than m
 }:
 {
   nixpkgs.overlays = [
-  ... # your existing overlays
- ] ++ nixos-npm-ls.overlays;
+    nixos-npm-ls.overlays.default
+    ... # your existing overlays
+ ];
 }
 ```
 
