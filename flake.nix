@@ -8,6 +8,7 @@
 
   outputs =
     {
+      inputs,
       dream2nix,
       nixpkgs,
       ...
@@ -37,12 +38,7 @@
       ];
     in
     {
-      overlays = [
-        (final: prev: {
-          prisma-language-server = makeDream2nixPkg ./servers/prisma-language-server prev;
-          gh-actions-language-server = makeDream2nixPkg ./servers/gh-actions-language-server prev;
-        })
-      ];
+      overlays = import ./overlays { inherit inputs; };
 
       packages = eachSystem (
         system:
