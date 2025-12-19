@@ -1,18 +1,18 @@
 {
   "package-lock": {
     "name": "@prisma/language-server",
-    "version": "31.3.0",
+    "version": "31.3.4",
     "lockfileVersion": 3,
     "requires": true,
     "packages": {
       "": {
         "name": "@prisma/language-server",
-        "version": "31.3.0",
+        "version": "31.3.4",
         "license": "Apache-2.0",
         "dependencies": {
-          "@prisma/config": "7.2.0",
+          "@prisma/config": "7.2.0-dev.27",
           "@prisma/prisma-schema-wasm": "7.2.0-4.0c8ef2ce45c83248ab3df073180d5eda9e8be7a3",
-          "@prisma/schema-files-loader": "7.2.0",
+          "@prisma/schema-files-loader": "7.2.0-dev.27",
           "@types/js-levenshtein": "1.1.3",
           "js-levenshtein": "1.1.6",
           "klona": "2.0.6",
@@ -629,9 +629,9 @@
         }
       },
       "node_modules/@prisma/config": {
-        "version": "7.2.0",
-        "resolved": "https://registry.npmjs.org/@prisma/config/-/config-7.2.0.tgz",
-        "integrity": "sha512-qmvSnfQ6l/srBW1S7RZGfjTQhc44Yl3ldvU6y3pgmuLM+83SBDs6UQVgMtQuMRe9J3gGqB0RF8wER6RlXEr6jQ==",
+        "version": "7.2.0-dev.27",
+        "resolved": "https://registry.npmjs.org/@prisma/config/-/config-7.2.0-dev.27.tgz",
+        "integrity": "sha512-0FHTmjNiKwzsLBXlt4xPElQnlVSSC9gzAQ8pHtFChHR9by7AsY4IIuYxd2c3TniTAs4jWXLhBrdFegdhVi+KaA==",
         "license": "Apache-2.0",
         "dependencies": {
           "c12": "3.1.0",
@@ -647,9 +647,9 @@
         "license": "Apache-2.0"
       },
       "node_modules/@prisma/schema-files-loader": {
-        "version": "7.2.0",
-        "resolved": "https://registry.npmjs.org/@prisma/schema-files-loader/-/schema-files-loader-7.2.0.tgz",
-        "integrity": "sha512-3OQ913USxffx3N9tJalZV/WPzvfhunn8/P7aUplbdV7bPZWSevMQANWDbaYOsZ9uHvWvgvC4lOXUrHdfweJhWw==",
+        "version": "7.2.0-dev.27",
+        "resolved": "https://registry.npmjs.org/@prisma/schema-files-loader/-/schema-files-loader-7.2.0-dev.27.tgz",
+        "integrity": "sha512-CXbhORi1IJHBJI0QZNtYymbBzotYuwJz2h+JIVCxamhStK0Z1tYPPfM5t0PfPHoA8LVZ2eQvQGooshUTXWyxzA==",
         "license": "Apache-2.0",
         "dependencies": {
           "@prisma/prisma-schema-wasm": "7.2.0-4.0c8ef2ce45c83248ab3df073180d5eda9e8be7a3",
@@ -2803,5 +2803,5 @@
       }
     }
   },
-  "invalidationHash": "baa5d23e7eddbdd6612b65d40ce81dbe909c8c11c236c37b80156e0e1e58cd53"
+  "invalidationHash": "89f54db647ebcf1eb5d509e5d22a07647cebb4f0bd23450176d173e89f420bcf"
 }
