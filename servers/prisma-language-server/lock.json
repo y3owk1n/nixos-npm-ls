@@ -1,18 +1,18 @@
 {
   "package-lock": {
     "name": "@prisma/language-server",
-    "version": "31.8.0",
+    "version": "31.9.0",
     "lockfileVersion": 3,
     "requires": true,
     "packages": {
       "": {
         "name": "@prisma/language-server",
-        "version": "31.8.0",
+        "version": "31.9.0",
         "license": "Apache-2.0",
         "dependencies": {
-          "@prisma/config": "7.6.0",
+          "@prisma/config": "7.7.0",
           "@prisma/prisma-schema-wasm": "7.6.0-1.75cbdc1eb7150937890ad5465d861175c6624711",
-          "@prisma/schema-files-loader": "7.6.0",
+          "@prisma/schema-files-loader": "7.7.0",
           "@types/js-levenshtein": "1.1.3",
           "js-levenshtein": "1.1.6",
           "klona": "2.0.6",
@@ -629,9 +629,9 @@
         }
       },
       "node_modules/@prisma/config": {
-        "version": "7.6.0",
-        "resolved": "https://registry.npmjs.org/@prisma/config/-/config-7.6.0.tgz",
-        "integrity": "sha512-MuAz1MK4PeG5/03YzfzX3CnFVHQ6qePGwUpQRzPzX5tT0ffJ3Tzi9zJZbBc+VzEGFCM8ghW/gTVDR85Syjt+Yw==",
+        "version": "7.7.0",
+        "resolved": "https://registry.npmjs.org/@prisma/config/-/config-7.7.0.tgz",
+        "integrity": "sha512-hmPI3tKLO2aP0Y5vugbjcnA9qqlfJndiT6ds4tw28U5hNHLWg+mHJEWAhjsSPgxjtmxhJ/EDIeIlyh+3Us0OPg==",
         "license": "Apache-2.0",
         "dependencies": {
           "c12": "3.1.0",
@@ -647,9 +647,9 @@
         "license": "Apache-2.0"
       },
       "node_modules/@prisma/schema-files-loader": {
-        "version": "7.6.0",
-        "resolved": "https://registry.npmjs.org/@prisma/schema-files-loader/-/schema-files-loader-7.6.0.tgz",
-        "integrity": "sha512-D5JZLfDQyWPqit3lxNbGCxHSTQwJ2bB9lY6navoYYdL6lulPgsMj5+atAYaWF5hP4Akibr33CS3HZFZlUfH8IQ==",
+        "version": "7.7.0",
+        "resolved": "https://registry.npmjs.org/@prisma/schema-files-loader/-/schema-files-loader-7.7.0.tgz",
+        "integrity": "sha512-vIrE9Pr2z7CCIvTeXN6pyd24UywYwSIQoG7gSJdgL4HCqiFJj7c7t3sTpoLb6W9n62UxMD/JlJhaCN50WdcODA==",
         "license": "Apache-2.0",
         "dependencies": {
           "@prisma/prisma-schema-wasm": "7.6.0-1.75cbdc1eb7150937890ad5465d861175c6624711",
@@ -1443,9 +1443,9 @@
         }
       },
       "node_modules/defu": {
-        "version": "6.1.4",
-        "resolved": "https://registry.npmjs.org/defu/-/defu-6.1.4.tgz",
-        "integrity": "sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg==",
+        "version": "6.1.7",
+        "resolved": "https://registry.npmjs.org/defu/-/defu-6.1.7.tgz",
+        "integrity": "sha512-7z22QmUWiQ/2d0KkdYmANbRUVABpZ9SNYyH5vx6PZ+nE5bcC0l7uFvEfHlyld/HcGBFTL536ClDt3DEcSlEJAQ==",
         "license": "MIT"
       },
       "node_modules/destr": {
@@ -2009,9 +2009,9 @@
         }
       },
       "node_modules/nypm/node_modules/citty": {
-        "version": "0.2.1",
-        "resolved": "https://registry.npmjs.org/citty/-/citty-0.2.1.tgz",
-        "integrity": "sha512-kEV95lFBhQgtogAPlQfJJ0WGVSokvLr/UEoFPiKKOXF7pl98HfUVUD0ejsuTCld/9xH9vogSywZ5KqHzXrZpqg==",
+        "version": "0.2.2",
+        "resolved": "https://registry.npmjs.org/citty/-/citty-0.2.2.tgz",
+        "integrity": "sha512-+6vJA3L98yv+IdfKGZHBNiGW5KHn22e/JwID0Strsz8h4S/csAu/OuICwxrg44k5MRiZHWIo8XXuJgQTriRP4w==",
         "license": "MIT"
       },
       "node_modules/ohash": {
@@ -2440,9 +2440,9 @@
         "license": "MIT"
       },
       "node_modules/tinyexec": {
-        "version": "1.0.4",
-        "resolved": "https://registry.npmjs.org/tinyexec/-/tinyexec-1.0.4.tgz",
-        "integrity": "sha512-u9r3uZC0bdpGOXtlxUIdwf9pkmvhqJdrVCH9fapQtgy/OeTTMZ1nqH7agtvEfmGui6e1XxjcdrlxvxJvc3sMqw==",
+        "version": "1.1.1",
+        "resolved": "https://registry.npmjs.org/tinyexec/-/tinyexec-1.1.1.tgz",
+        "integrity": "sha512-VKS/ZaQhhkKFMANmAOhhXVoIfBXblQxGX1myCQ2faQrfmobMftXeJPcZGp0gS07ocvGJWDLZGyOZDadDBqYIJg==",
         "license": "MIT",
         "engines": {
           "node": ">=18"
@@ -2536,9 +2536,9 @@
         }
       },
       "node_modules/vite": {
-        "version": "6.4.1",
-        "resolved": "https://registry.npmjs.org/vite/-/vite-6.4.1.tgz",
-        "integrity": "sha512-+Oxm7q9hDoLMyJOYfUYBuHQo+dkAloi33apOPP56pzj+vsdJDzr+j1NISE5pyaAuKL4A3UD34qd0lx5+kfKp2g==",
+        "version": "6.4.2",
+        "resolved": "https://registry.npmjs.org/vite/-/vite-6.4.2.tgz",
+        "integrity": "sha512-2N/55r4JDJ4gdrCvGgINMy+HH3iRpNIz8K6SFwVsA+JbQScLiC+clmAxBgwiSPgcG9U15QmvqCGWzMbqda5zGQ==",
         "dev": true,
         "license": "MIT",
         "dependencies": {
@@ -2892,5 +2892,5 @@
       }
     }
   },
-  "invalidationHash": "daa3d0baa362f8f90a9e853ba42b3e39da29e3c9dc2aaca98c06f25c60f4ea09"
+  "invalidationHash": "25359c9978982a7b34445eeb1e4a1a441800188ea4ca69e03154ee3ef947425c"
 }
